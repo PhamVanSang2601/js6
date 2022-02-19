@@ -8,10 +8,10 @@ const submit = document.getElementById("submit").onclick = function () {
             s += Math.pow(x, i);
         }
     } else if (0 <= n  && n < 1){
-        s += x + Math.pow(x,n);
+        s += Math.pow(x,n);
     } else if (n < 0){
-        for (;n < 0; n++){
-            s += Math.pow(x,n)
+        for (let k = n ;k < 0; k++){
+            s += Math.pow(x,k)
         }
     }
     result2.style.display = "block";
